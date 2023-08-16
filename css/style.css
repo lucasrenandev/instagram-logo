@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #081d47;
+    display: grid;
+    place-content: center;
+}
+
+.instagram {
+    width: 270px;
+    height: 270px;
+    background: radial-gradient(circle at 33% 100%, 
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #3647d8);
+    border-radius: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 18px solid #fff;
+    border-radius: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.square::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 15px;
+    right: 15px;
+}   
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 18px solid #fff;
+    border-radius: 50%;
+}
